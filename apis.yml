@@ -1,7 +1,30 @@
 aid: indieflow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/indieflow.png
 name: IndieFlow
-description: IndieFlow is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  IndieFlow is an all-in-one music management platform for independent artists
+  and their managers, positioning itself as a "Shopify for musicians." Made by
+  musicians, it centralizes the business side of an independent music career in
+  one place: distributing releases to 30+ streaming services (Spotify, Apple
+  Music, Tidal, Deezer, TikTok and more), collecting and registering royalties
+  and songwriter/publisher credits with performing rights organizations,
+  managing creative projects and release schedules, promoting music, booking
+  gigs, and handling payments and collaborations. Founded in 2020, the company
+  raised a $4M round led by State of Mind Ventures with participation from
+  Techstars and other investors, and its artist-facing distribution is delivered
+  through a Revelator-powered back end. IndieFlow does not currently publish a
+  public developer API; this profile tracks the company's public web presence.
 url: https://raw.githubusercontent.com/api-evangelist/indieflow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Music
+- Music Distribution
+- Independent Artists
+- Royalties
+- Music Management
+- Streaming
+- Artist Tools
+- Techstars
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/indieflow-domain-security.yml
 - type: Website
-  url: https://indieflow.me/
+  url: https://www.indieflow.me/
+- type: SignUp
+  url: https://artists.indieflow.me/
+- type: Login
+  url: https://artists.indieflow.me/
+- type: HelpCenter
+  url: https://www.indieflow.me/faqs
+- type: PrivacyPolicy
+  url: https://artists.indieflow.me/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
